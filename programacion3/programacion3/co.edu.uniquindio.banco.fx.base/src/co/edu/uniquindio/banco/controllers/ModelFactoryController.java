@@ -75,6 +75,10 @@ public class ModelFactoryController {
 	public void setBanco(Banco banco) {
 		this.banco = banco;
 	}
+
+	public void agregarCliente(String nombre, String apellido, String cedula) {
+		getBanco().agregarCliente(nombre, apellido, cedula);		
+	}
 	
 	
 	

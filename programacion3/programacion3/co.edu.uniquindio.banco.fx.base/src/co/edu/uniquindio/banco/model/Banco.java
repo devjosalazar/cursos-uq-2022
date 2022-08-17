@@ -53,4 +53,10 @@ public class Banco {
 	}
 
 
+	public void agregarCliente(String nombre, String apellido, String cedula) {
+		
+		
+	}
+
+
 }

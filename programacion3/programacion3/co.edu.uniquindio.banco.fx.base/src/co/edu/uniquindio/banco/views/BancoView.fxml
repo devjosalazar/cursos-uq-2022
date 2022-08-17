@@ -30,7 +30,7 @@
                                     <TextField layoutX="443.0" layoutY="114.0" prefHeight="25.0" prefWidth="225.0" />
                                     <Label layoutX="381.0" layoutY="118.0" text="Nombre:" />
                                     <Button fx:id="btnNuevoCliente" layoutX="86.0" layoutY="202.0" mnemonicParsing="false" onAction="#nuevoCienteAction" prefHeight="25.0" prefWidth="116.0" text="Nuevo" />
-                                    <Button fx:id="btnAgregarCliente" layoutX="235.0" layoutY="202.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Agregar" />
+                                    <Button fx:id="btnAgregarCliente" layoutX="235.0" layoutY="202.0" mnemonicParsing="false" onAction="#agregarClienteAction" prefHeight="25.0" prefWidth="116.0" text="Agregar" />
                                     <Button fx:id="btnActualizar" layoutX="409.0" layoutY="202.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Actualizar" />
                                  </children></AnchorPane>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">

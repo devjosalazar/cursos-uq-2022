@@ -57,15 +57,22 @@ public class BancoViewController {
 
     @FXML
     void nuevoCienteAction(ActionEvent event) {
-    	mostrarMensaje("Hola", "Como", "van con el proyecto", AlertType.INFORMATION);
+    	
+    }
+
+    @FXML
+    void agregarClienteAction(ActionEvent event) {
+    	agregarCliente();
     }
 
 
+    private void agregarCliente() {
+		crudClienteViewController.agregarCliente("Juan","Alvarez","222222");		
+	}
 
-    @FXML
+	@FXML
     void initialize() {
-    	modelFactoryController = ModelFactoryController.getInstance();
-    	crudClienteViewController = new CrudClienteViewController(modelFactoryController);
+    	crudClienteViewController = new CrudClienteViewController();
     	inicializarEmpleadoView();
     }
     
@@ -82,6 +89,12 @@ public class BancoViewController {
 	}
     
     
+	
+	
+	
+	
+	
+	
 	public void setAplicacion(Aplicacion aplicacion) {
 		this.aplicacion = aplicacion;
 	}

@@ -2,12 +2,12 @@ package co.edu.uniquindio.banco.controllers;
 
 import co.edu.uniquindio.banco.model.Banco;
 
-public class CrudClienteViewController {
+public class CrudEmpleadoViewController {
 
 	ModelFactoryController modelFactoryController;
 	Banco banco;
 	
-	public CrudClienteViewController() {	
+	public CrudEmpleadoViewController() {	
 		modelFactoryController = ModelFactoryController.getInstance();
 	}
 
@@ -23,7 +23,7 @@ public class CrudClienteViewController {
 
 
 	public void agregarCliente(String nombre, String apellido, String cedula) {
-		modelFactoryController.agregarCliente(nombre,apellido,cedula);
+		getBanco().agregarCliente(nombre,apellido,cedula);
 		
 	}
 }
