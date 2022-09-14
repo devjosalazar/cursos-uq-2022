@@ -11,7 +11,8 @@ public class EP_08_recorreMatriz {
     	
     	int [][] matriz = {
     			{1,2,3},
-    			{4,5,6,5}
+    			{4,5,6},
+    			{7,8,9}
     	};
     	
     	recorrerMatriz(matriz,0,0);
@@ -23,7 +24,7 @@ public class EP_08_recorreMatriz {
 		if(i == matriz.length || j == matriz[i].length){
 			System.out.println("Fin del recorrido");
 		}else{
-			System.out.print(" "+ matriz[i][j]);
+			System.out.print(""+ matriz[i][j]);
 			if(j == matriz[i].length-1){
 				i++;
 				j = 0;
