@@ -29,26 +29,24 @@ public class CrudEmpleadoViewController {
 
 
 	public ArrayList<Empleado> obtenerEmpleados() {
-		
 		return modelFactoryController.obtenerEmpleados();
 	}
 
 
 	public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) {
-		// TODO Auto-generated method stub
 		return modelFactoryController.crearEmpleado(nombre, apellido, cedula, fechaNacimiento);
 	}
 
 
 	public boolean eliminarEmpleado(String cedula) {
-		
-		return modelFactoryController.eliminarEmpleado(cedula);
+//		return modelFactoryController.eliminarEmpleado(cedula);
+		return false;
 	}
 
 
 	public boolean actualizarEmpleado(String cedulaActual, String nombre, String apellido, String cedula,String fechaNacimiento) {
-		
-		return modelFactoryController.actualizarEmpleado(cedulaActual, nombre, apellido, cedula, fechaNacimiento);
+//		return modelFactoryController.actualizarEmpleado(cedulaActual, nombre, apellido, cedula, fechaNacimiento);
+		return false;
 	}
 
 }

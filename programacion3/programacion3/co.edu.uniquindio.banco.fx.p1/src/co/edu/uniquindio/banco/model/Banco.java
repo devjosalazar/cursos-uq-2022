@@ -57,110 +57,63 @@ public class Banco implements IBancoService{
 
 
 	@Override
-	public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) throws EmpleadoException {
+	public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) {
 		
+		//1. verificar si existe
+		boolean empleadoExiste = false;
 		
-		Empleado nuevoEmpleado = null;
-		boolean flagEmpleadoExiste= false;
-		
-		flagEmpleadoExiste = verificarEmpleadoExistente(cedula);
-		
-		if(flagEmpleadoExiste == true){
-			throw new EmpleadoException("El empleado con cédula "+ cedula+" no se puede crear. Ya existe");
+		if(empleadoExiste == true){
+			return null;
 		}else{
-			nuevoEmpleado = new Empleado();
+			Empleado nuevoEmpleado = new Empleado();
 			nuevoEmpleado.setNombre(nombre);
 			nuevoEmpleado.setApellido(apellido);
 			nuevoEmpleado.setCedula(cedula);
 			nuevoEmpleado.setFechaNacimiento(fechaNacimiento);
-			getListaEmpleados().add(nuevoEmpleado);
 		}
-		
-		return nuevoEmpleado;
+		return null;
 	}
 
 
 	@Override
-	public boolean actualizarEmpleado(String cedulaActual, String nombre, String apellido, String cedula, String fechaNacimiento) {
-		
-		Empleado empleado = null;
-		boolean empleadoActualizado = false;
-		
-		empleado = obtenerEmpleado(cedulaActual);
-		
-		if(empleado != null){
-			
-			empleado.setNombre(nombre);
-			empleado.setApellido(apellido);
-			empleado.setCedula(cedula);
-			empleado.setFechaNacimiento(fechaNacimiento);
-			empleadoActualizado = true;
-		}
-		
-		return empleadoActualizado;
+	public boolean actualizarEmpleado(String cedulaActual, String nombre, String apellido, String cedula,
+			String fechaNacimiento) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 
 	@Override
 	public Boolean eliminarEmpleado(String cedula) throws EmpleadoException {
-		
-		boolean flagEliminado = false;
-		Empleado empleado = null;
-		
-		empleado = obtenerEmpleado(cedula);
-		
-		if(empleado != null){
-			
-			getListaEmpleados().remove(empleado);
-			flagEliminado = true;
-		}else{
-			throw new EmpleadoException("El empleado con cédula "+ cedula+" no se puede eliminar. No existe");
-		}
-		
-		return flagEliminado;
-	}
-
-
-	@Override
-	public boolean verificarEmpleadoExistente(String cedula) {
-		
-		boolean flagEmpleadoExiste =  false;
-		
-		
-		for (Empleado empleado : listaEmpleados) {
-			
-			if(empleado.getCedula().equalsIgnoreCase(cedula)){
-				flagEmpleadoExiste = true;
-				break;
-			}
-		}
-		
-		return flagEmpleadoExiste;
-	}
-
-
-	@Override
-	public ArrayList<Empleado> obtenerEmpleados() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 
 	@Override
-	public Empleado obtenerEmpleado(String cedula) {
-		
-		Empleado empleadoEncontrado = null;
-		
-		for (Empleado empleado : listaEmpleados) {
-			
-			if(empleado.getCedula().equalsIgnoreCase(cedula)){
-				empleadoEncontrado = empleado;
-				break;
-			}
-		}
-		
-		return empleadoEncontrado;
+	public boolean verificarEmpleadoExistente(String cedula) {
+		// TODO Auto-generated method stub
+		return false;
 	}
+
+
+	@Override
+	public Empleado obtenerEmpleado(String cedula) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public ArrayList<Empleado> obtenerEmpleados() {
+		// TODO Auto-generated method stub
+		return getListaEmpleados();
+	}
+
+
+
+
+
 
 	
 	

@@ -105,41 +105,15 @@ public class ModelFactoryController implements IModelFactoryService{
 		this.banco = banco;
 	}
 
-
 	@Override
 	public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) {
-		
-		
-		Empleado empleado = null;
-		
-		try {
-			empleado = getBanco().crearEmpleado(nombre, apellido, cedula, fechaNacimiento);
-		} catch (EmpleadoException e) {
-			e.getMessage();
-		}
-		
-		return empleado;
-		
-	}
-
-	@Override
-	public boolean actualizarEmpleado(String cedulaActual, String nombre, String apellido, String cedula, String fechaNacimiento) {
-		
-		return getBanco().actualizarEmpleado(cedulaActual, nombre, apellido, cedula, fechaNacimiento);
+		return getBanco().crearEmpleado(nombre, apellido, cedula, fechaNacimiento);
 	}
 
 	@Override
 	public Boolean eliminarEmpleado(String cedula) {
-		
-		boolean flagEmpleadoExiste = false;
-		
-		try {
-			flagEmpleadoExiste = getBanco().eliminarEmpleado(cedula);
-		} catch (EmpleadoException e) {
-			// TODO Auto-generated catch block
-			e.getMessage();
-		}
-		return flagEmpleadoExiste;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
@@ -147,12 +121,21 @@ public class ModelFactoryController implements IModelFactoryService{
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 	@Override
 	public ArrayList<Empleado> obtenerEmpleados() {
-		
-		return banco.getListaEmpleados();
+//		getBanco().getListaEmpleados();
+		return getBanco().obtenerEmpleados();
 	}
+
+	@Override
+	public boolean actualizarEmpleado(String cedulaActual, String nombre, String apellido, String cedula,
+			String fechaNacimiento) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
 
 
 	

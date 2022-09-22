@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="638.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controllers.BancoViewController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="14.0" prefHeight="611.0" prefWidth="1039.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Cliente">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" layoutX="14.0" layoutY="14.0" orientation="VERTICAL" prefHeight="561.0" prefWidth="936.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="277.0" prefWidth="1002.0">
+                                 <children>
+                                    <Label layoutX="24.0" layoutY="23.0" text="Nombre:" />
+                                    <TextField fx:id="txtNombre" layoutX="86.0" layoutY="19.0" prefHeight="25.0" prefWidth="225.0" />
+                                    <TextField fx:id="txtCedula" layoutX="86.0" layoutY="64.0" prefHeight="25.0" prefWidth="225.0" />
+                                    <Label layoutX="24.0" layoutY="68.0" text="Cedula:" />
+                                    <Label layoutX="24.0" layoutY="118.0" text="Nombre:" />
+                                    <TextField layoutX="86.0" layoutY="114.0" prefHeight="25.0" prefWidth="225.0" />
+                                    <TextField fx:id="txtApellido" layoutX="443.0" layoutY="19.0" prefHeight="25.0" prefWidth="225.0" />
+                                    <Label layoutX="381.0" layoutY="23.0" text="Apellido:" />
+                                    <Label layoutX="381.0" layoutY="68.0" text="Nombre:" />
+                                    <TextField layoutX="443.0" layoutY="64.0" prefHeight="25.0" prefWidth="225.0" />
+                                    <TextField layoutX="443.0" layoutY="114.0" prefHeight="25.0" prefWidth="225.0" />
+                                    <Label layoutX="381.0" layoutY="118.0" text="Nombre:" />
+                                    <Button fx:id="btnNuevoCliente" layoutX="86.0" layoutY="202.0" mnemonicParsing="false" onAction="#nuevoCienteAction" prefHeight="25.0" prefWidth="116.0" text="Nuevo" />
+                                    <Button fx:id="btnAgregarCliente" layoutX="235.0" layoutY="202.0" mnemonicParsing="false" onAction="#agregarClienteAction" prefHeight="25.0" prefWidth="116.0" text="Agregar" />
+                                    <Button fx:id="btnActualizar" layoutX="409.0" layoutY="202.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Actualizar" />
+                                 </children></AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TableView layoutX="14.0" layoutY="14.0" prefHeight="184.0" prefWidth="752.0">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                    <Button fx:id="btnEliminar" layoutX="368.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Eliminar" />
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Empleado">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab text="Cuenta">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Transacción bancaria">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

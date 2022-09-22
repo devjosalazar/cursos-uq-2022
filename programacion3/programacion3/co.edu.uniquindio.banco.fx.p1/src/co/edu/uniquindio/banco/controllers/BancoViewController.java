@@ -34,10 +34,6 @@ public class BancoViewController {
 	
 	ObservableList<Cliente> listaClientesData   = FXCollections.observableArrayList();
 	
-	
-	
-	
-	
     @FXML
     private ResourceBundle resources;
 
@@ -142,12 +138,6 @@ public class BancoViewController {
 		listaEmpleadosData.addAll(crudEmpleadoViewController.obtenerEmpleados());
 		return listaEmpleadosData;
 	}
-	
-	
-	
-
-
-
 
 	@FXML
     void nuevoEmpleadoAction(ActionEvent event) {
@@ -268,14 +258,6 @@ public class BancoViewController {
         	}
         	
     	}
-    	
-    	
-    	
-    	
-    	
-
-
-		
 	}
 	
 	
