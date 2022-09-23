@@ -1,0 +1,54 @@
+sep 22, 2022 9:05:05 PM flujosDatos.EjemplosBasicos archivoRegistro
+INFORMACIÓN: Primer mensaje 1.1
+sep 22, 2022 9:05:05 PM flujosDatos.EjemplosBasicos archivoRegistro
+ADVERTENCIA: Segundo mensaje 2.1
+sep 22, 2022 9:05:05 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: Tercer mensaje 3.1
+sep 22, 2022 9:07:11 PM flujosDatos.EjemplosBasicos archivoRegistro
+INFORMACIÓN: Primer mensaje 1.1
+sep 22, 2022 9:07:11 PM flujosDatos.EjemplosBasicos archivoRegistro
+ADVERTENCIA: Segundo mensaje 2.1
+sep 22, 2022 9:07:11 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: Tercer mensaje 3.1
+sep 22, 2022 9:07:16 PM flujosDatos.EjemplosBasicos archivoRegistro
+INFORMACIÓN: Primer mensaje 1.1
+sep 22, 2022 9:07:16 PM flujosDatos.EjemplosBasicos archivoRegistro
+ADVERTENCIA: Segundo mensaje 2.1
+sep 22, 2022 9:07:16 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: Tercer mensaje 3.1
+sep 22, 2022 9:07:58 PM flujosDatos.EjemplosBasicos archivoRegistro
+INFORMACIÓN: Primer mensaje 1.1
+sep 22, 2022 9:07:58 PM flujosDatos.EjemplosBasicos archivoRegistro
+ADVERTENCIA: Segundo mensaje 2.1
+sep 22, 2022 9:07:58 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: Tercer mensaje 3.1
+sep 22, 2022 9:25:47 PM flujosDatos.EjemplosBasicos archivoRegistro
+INFORMACIÓN: Primer mensaje 1.1
+sep 22, 2022 9:25:47 PM flujosDatos.EjemplosBasicos archivoRegistro
+ADVERTENCIA: Segundo mensaje 2.1
+sep 22, 2022 9:25:47 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: Tercer mensaje 3.1
+sep 22, 2022 9:26:41 PM flujosDatos.EjemplosBasicos archivoRegistro
+INFORMACIÓN: Primer mensaje 1.1
+sep 22, 2022 9:26:41 PM flujosDatos.EjemplosBasicos archivoRegistro
+ADVERTENCIA: Segundo mensaje 2.1
+sep 22, 2022 9:26:41 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: Tercer mensaje 3.1
+sep 22, 2022 9:26:41 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: / by zero
+sep 22, 2022 9:27:35 PM flujosDatos.EjemplosBasicos archivoRegistro
+INFORMACIÓN: Primer mensaje 1.1
+sep 22, 2022 9:27:35 PM flujosDatos.EjemplosBasicos archivoRegistro
+ADVERTENCIA: Segundo mensaje 2.1
+sep 22, 2022 9:27:35 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: Tercer mensaje 3.1
+sep 22, 2022 9:27:35 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: [Ljava.lang.StackTraceElement;@4b67cf4d
+sep 22, 2022 9:27:53 PM flujosDatos.EjemplosBasicos archivoRegistro
+INFORMACIÓN: Primer mensaje 1.1
+sep 22, 2022 9:27:53 PM flujosDatos.EjemplosBasicos archivoRegistro
+ADVERTENCIA: Segundo mensaje 2.1
+sep 22, 2022 9:27:53 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: Tercer mensaje 3.1
+sep 22, 2022 9:27:53 PM flujosDatos.EjemplosBasicos archivoRegistro
+GRAVE: java.lang.ArithmeticException: / by zero
