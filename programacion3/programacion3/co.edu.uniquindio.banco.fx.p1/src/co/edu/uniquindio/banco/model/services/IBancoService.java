@@ -9,7 +9,7 @@ public interface IBancoService {
 
 	
 	public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) throws EmpleadoException;
-	public boolean actualizarEmpleado(String cedulaActual,String nombre, String apellido, String cedula, String fechaNacimiento);
+	public boolean actualizarEmpleado(String cedulaActual,String nombre, String apellido, String cedula, String fechaNacimiento) throws EmpleadoException;
 	public Boolean eliminarEmpleado(String cedula)throws EmpleadoException;
 	public boolean  verificarEmpleadoExistente(String cedula);
 	public Empleado obtenerEmpleado(String cedula);

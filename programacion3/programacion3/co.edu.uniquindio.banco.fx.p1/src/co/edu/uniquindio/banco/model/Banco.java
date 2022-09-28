@@ -57,27 +57,27 @@ public class Banco implements IBancoService{
 
 
 	@Override
-	public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) {
-		
+	public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) throws EmpleadoException{
+		Empleado nuevoEmpleado = null;
 		//1. verificar si existe
-		boolean empleadoExiste = false;
-		
-		if(empleadoExiste == true){
-			return null;
+		boolean empleadoExiste = verificarEmpleadoExistente(cedula);
+		if(empleadoExiste){
+			throw new EmpleadoException("El empleado con cedula: "+cedula+" ya existe");
 		}else{
-			Empleado nuevoEmpleado = new Empleado();
+			nuevoEmpleado = new Empleado();
 			nuevoEmpleado.setNombre(nombre);
 			nuevoEmpleado.setApellido(apellido);
 			nuevoEmpleado.setCedula(cedula);
 			nuevoEmpleado.setFechaNacimiento(fechaNacimiento);
+			getListaEmpleados().add(nuevoEmpleado);
 		}
-		return null;
+		return nuevoEmpleado;
 	}
 
 
 	@Override
 	public boolean actualizarEmpleado(String cedulaActual, String nombre, String apellido, String cedula,
-			String fechaNacimiento) {
+			String fechaNacimiento) throws EmpleadoException{
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -85,22 +85,40 @@ public class Banco implements IBancoService{
 
 	@Override
 	public Boolean eliminarEmpleado(String cedula) throws EmpleadoException {
-		// TODO Auto-generated method stub
-		return null;
+		Empleado empleado = null;
+		boolean flagExiste = false;
+		empleado = obtenerEmpleado(cedula);
+		if(empleado == null)
+			throw new EmpleadoException("El empleado a eliminar no existe");
+		else{
+			getListaEmpleados().remove(empleado);
+			flagExiste = true;
+		}
+		return flagExiste;
 	}
 
 
 	@Override
 	public boolean verificarEmpleadoExistente(String cedula) {
-		// TODO Auto-generated method stub
-		return false;
+		Empleado empleado = null;
+		empleado = obtenerEmpleado(cedula);
+		if(empleado == null)
+			return false;
+		else
+			return true;
 	}
 
 
 	@Override
 	public Empleado obtenerEmpleado(String cedula) {
-		// TODO Auto-generated method stub
-		return null;
+		Empleado empleadoEncontrado = null;
+		for (Empleado empleado : getListaEmpleados()) {
+			if(empleado.getCedula().equalsIgnoreCase(cedula)){
+				empleadoEncontrado = empleado;
+				break;
+			}
+		}
+		return empleadoEncontrado;
 	}
 
 

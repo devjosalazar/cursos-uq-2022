@@ -163,11 +163,8 @@ public class BancoViewController {
     	
     	//2. Validar la información
     	if(datosValidos(nombre, apellido, cedula, fechaNacimiento)== true){
-    		
     		Empleado empleado = null;
-    		
     		empleado = crudEmpleadoViewController.crearEmpleado(nombre,apellido,cedula,fechaNacimiento);
-    		
     		if(empleado != null){
     			listaEmpleadosData.add(empleado);
     			mostrarMensaje("Notificación empleado", "Empleado creado", "El empleado se ha creado con éxito", AlertType.INFORMATION);

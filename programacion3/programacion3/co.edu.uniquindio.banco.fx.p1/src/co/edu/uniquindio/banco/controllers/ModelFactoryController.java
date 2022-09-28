@@ -107,13 +107,26 @@ public class ModelFactoryController implements IModelFactoryService{
 
 	@Override
 	public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) {
-		return getBanco().crearEmpleado(nombre, apellido, cedula, fechaNacimiento);
+		Empleado empleado = null;
+		try {
+			empleado = getBanco().crearEmpleado(nombre, apellido, cedula, fechaNacimiento);
+		} catch (EmpleadoException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return empleado;
 	}
 
 	@Override
 	public Boolean eliminarEmpleado(String cedula) {
-		// TODO Auto-generated method stub
-		return null;
+		boolean flagExiste = false;
+		try {
+			flagExiste = getBanco().eliminarEmpleado(cedula);
+		} catch (EmpleadoException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return flagExiste;
 	}
 
 	@Override
@@ -135,10 +148,5 @@ public class ModelFactoryController implements IModelFactoryService{
 		return false;
 	}
 
-
-
-
-	
-	
 	
 }

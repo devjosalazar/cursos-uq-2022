@@ -39,8 +39,7 @@ public class CrudEmpleadoViewController {
 
 
 	public boolean eliminarEmpleado(String cedula) {
-//		return modelFactoryController.eliminarEmpleado(cedula);
-		return false;
+		return modelFactoryController.eliminarEmpleado(cedula);
 	}
 
 
