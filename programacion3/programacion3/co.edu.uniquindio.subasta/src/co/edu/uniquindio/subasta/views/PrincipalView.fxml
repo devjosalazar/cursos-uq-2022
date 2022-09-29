@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="545.0" prefWidth="472.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="co.edu.uniquindio.subasta.controlles.PrincipalViewController">
+   <children>
+      <AnchorPane layoutX="-460.0" layoutY="-330.0" prefHeight="346.0" prefWidth="408.0" />
+      <TabPane layoutX="7.0" layoutY="8.0" prefHeight="536.0" prefWidth="463.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Login">
+               <content>
+                  <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <SplitPane layoutX="8.0" layoutY="7.0" orientation="VERTICAL" prefHeight="499.0" prefWidth="452.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="447.0" prefWidth="450.0">
+                                       <children>
+                                          <Button fx:id="btnIngresar" layoutX="141.0" layoutY="267.0" mnemonicParsing="false" onAction="#ingresarAction" prefHeight="50.0" prefWidth="155.0" text="Ingresar" />
+                                          <RadioButton fx:id="rdbAnunciante" layoutX="69.0" layoutY="195.0" mnemonicParsing="false" text="Anunciante" />
+                                          <RadioButton fx:id="rdbComprador" layoutX="253.0" layoutY="195.0" mnemonicParsing="false" text="Comprador" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </content>
+            </Tab>
+          <Tab text="Registro" />
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
