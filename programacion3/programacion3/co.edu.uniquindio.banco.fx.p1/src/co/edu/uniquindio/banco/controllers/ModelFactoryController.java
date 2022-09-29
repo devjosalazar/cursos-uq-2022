@@ -7,7 +7,7 @@ import co.edu.uniquindio.banco.exceptions.EmpleadoException;
 import co.edu.uniquindio.banco.model.Banco;
 import co.edu.uniquindio.banco.model.Cliente;
 import co.edu.uniquindio.banco.model.Empleado;
-import co.edu.uniquindio.banco.model.services.IModelFactoryService;
+import co.edu.uniquindio.banco.services.IModelFactoryService;
 import javafx.collections.ObservableList;
 
 public class ModelFactoryController implements IModelFactoryService{

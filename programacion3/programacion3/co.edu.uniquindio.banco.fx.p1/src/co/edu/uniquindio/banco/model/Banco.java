@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 import co.edu.uniquindio.banco.exceptions.EmpleadoException;
-import co.edu.uniquindio.banco.model.services.IBancoService;
+import co.edu.uniquindio.banco.services.IBancoService;
 
 public class Banco implements IBancoService{
 

@@ -1,4 +1,4 @@
-package co.edu.uniquindio.banco.model.services;
+package co.edu.uniquindio.banco.services;
 
 import java.util.ArrayList;
 
