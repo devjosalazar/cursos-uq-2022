@@ -39,8 +39,7 @@ public class ModelFactoryController implements IModelFactoryService{
 		
 		
 		//2. Cargar los datos de los archivos
-		cargarDatosDesdeArchivos();
-		
+//		cargarDatosDesdeArchivos();		
 		
 		//3. Guardar y Cargar el recurso serializable binario		
 //		cargarResourceBinario();
@@ -48,13 +47,13 @@ public class ModelFactoryController implements IModelFactoryService{
 		
 		//4. Guardar y Cargar el recurso serializable XML
 //		guardarResourceXML();
-//		cargarResourceXML();
+		cargarResourceXML();
 		
 		//Siempre se debe verificar si la raiz del recurso es null
 		
 		if(banco == null){
-//			inicializarDatos();
-//			guardarResourceXML();
+			inicializarDatos();
+			guardarResourceXML();
 		}
 		
 		registrarAccionesSistema("Inicio de sesión", 1, "inicioSesión");
@@ -63,6 +62,26 @@ public class ModelFactoryController implements IModelFactoryService{
 
 	
 
+
+	private void cargarResourceXML() {
+		banco = Persistencia.cargarRecursoBancoXML();
+		
+	}
+
+	private void guardarResourceXML() {
+		Persistencia.guardarRecursoBancoXML(banco);
+		
+	}
+
+	private void cargarResourceBinario() {
+		banco = Persistencia.cargarRecursoBancoBinario();
+	}
+
+	private void guardarResourceBinario() {
+		
+		Persistencia.guardarRecursoBancoBinario(banco);
+		
+	}
 
 	private void inicializarSalvarDatos() {
 		inicializarDatos();

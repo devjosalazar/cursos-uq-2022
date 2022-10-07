@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import co.edu.uniquindio.banco.exceptions.EmpleadoException;
 import co.edu.uniquindio.banco.services.IBancoService;
 
-public class Banco implements IBancoService{
+public class Banco implements IBancoService, Serializable{
 
 	/**
 	 * 

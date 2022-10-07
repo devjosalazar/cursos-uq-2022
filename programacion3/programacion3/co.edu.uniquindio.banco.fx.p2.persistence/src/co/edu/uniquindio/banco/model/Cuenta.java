@@ -1,10 +1,15 @@
 package co.edu.uniquindio.banco.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
-public class Cuenta {
+public class Cuenta implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String numeroCuenta;
 	private Double saldo;
 	ArrayList<Transaccion> listaTransacciones = new ArrayList<Transaccion>();
