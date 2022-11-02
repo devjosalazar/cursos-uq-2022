@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subasta:SubastaQuindio xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:subasta="http:///subasta.ecore">
+  <listAnunciantes nombre="pedro  anunciante" theUsuarioAsociado="//@listUsuarios.0">
+    <listaAnuncios nombre="vendo barato" codigo="001" theProducto="//@listAnunciantes.0/@listaProductos.0" thePuja="//@listaCompradores.1/@listaPujas.0 //@listaCompradores.1/@listaPujas.1"/>
+    <listaAnuncios nombre="vendo regalado" codigo="002" theProducto="//@listAnunciantes.0/@listaProductos.1" thePuja="//@listaCompradores.1/@listaPujas.2"/>
+    <listaProductos nombre="celular 1" tipo="tecno" theAnuncio="//@listAnunciantes.0/@listaAnuncios.0"/>
+    <listaProductos nombre="celular 2" tipo="tecno" theAnuncio="//@listAnunciantes.0/@listaAnuncios.1"/>
+    <listaProductos nombre="celular 3" tipo="tecno"/>
+  </listAnunciantes>
+  <listAnunciantes nombre="pedro  anunciante">
+    <listaAnuncios nombre="vendo barato" codigo="001" theProducto="//@listAnunciantes.1/@listaProductos.0"/>
+    <listaAnuncios nombre="vendo regalado" codigo="002" theProducto="//@listAnunciantes.1/@listaProductos.1"/>
+    <listaProductos nombre="celular 1" tipo="tecno" theAnuncio="//@listAnunciantes.1/@listaAnuncios.0"/>
+    <listaProductos nombre="celular 2" tipo="tecno" theAnuncio="//@listAnunciantes.1/@listaAnuncios.1"/>
+    <listaProductos nombre="celular 3" tipo="tecno"/>
+  </listAnunciantes>
+  <listAnunciantes nombre="pedro  anunciante">
+    <listaAnuncios nombre="vendo barato" codigo="001" theProducto="//@listAnunciantes.2/@listaProductos.0"/>
+    <listaAnuncios nombre="vendo regalado" codigo="002" theProducto="//@listAnunciantes.2/@listaProductos.1"/>
+    <listaProductos nombre="celular 1" tipo="tecno" theAnuncio="//@listAnunciantes.2/@listaAnuncios.0"/>
+    <listaProductos nombre="celular 2" tipo="tecno" theAnuncio="//@listAnunciantes.2/@listaAnuncios.1"/>
+    <listaProductos nombre="celular 3" tipo="tecno"/>
+  </listAnunciantes>
+  <listUsuarios usuario="pepito" contraseña="121212" theAnunciante="//@listAnunciantes.0" theComprador="//@listaCompradores.0"/>
+  <listUsuarios usuario="Daniela" contraseña="324234"/>
+  <listaCompradores nombre="pedro comprador" theUsuarioAsociado="//@listUsuarios.0"/>
+  <listaCompradores nombre="Daniela comprador">
+    <listaPujas codigo="001" ofertaInicial="1590000" fecha="25-10-2022" theAnuncio="//@listAnunciantes.0/@listaAnuncios.0"/>
+    <listaPujas codigo="002" ofertaInicial="2000000" fecha="2353253" theAnuncio="//@listAnunciantes.0/@listaAnuncios.0"/>
+    <listaPujas codigo="003" ofertaInicial="2333333" fecha="323532" theAnuncio="//@listAnunciantes.0/@listaAnuncios.1"/>
+  </listaCompradores>
+</subasta:SubastaQuindio>

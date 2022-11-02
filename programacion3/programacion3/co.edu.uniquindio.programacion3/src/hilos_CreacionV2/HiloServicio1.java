@@ -9,7 +9,7 @@ public class HiloServicio1 extends Thread{
 	public HiloServicio1() {
 		this.runHilo = true;
 		this.contador = 1;
-		start();
+		
 	}
 	
 	

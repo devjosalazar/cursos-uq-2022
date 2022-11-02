@@ -1,0 +1,2 @@
+numeroTra,fecha,descripcion,tipo,   cliente (idcliente),   cuenta(numero),  empleado(idempleado)
+11111,10-06-2022, xxxxxx, deposito, 5456465,545465,546556456

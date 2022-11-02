@@ -18,6 +18,7 @@ public class ManejadorHilo implements Runnable{
 
 	public void starHiloServicio1() {
 		hiloServicio1 = new HiloServicio1();
+		hiloServicio1.start();
 	}
 
 	public void detenerHiloServicio1() {
